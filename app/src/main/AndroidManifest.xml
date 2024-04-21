@@ -13,6 +13,27 @@
         android:theme="@style/Theme.Redi1"
         tools:targetApi="31">
         <activity
+            android:name=".Transaction2"
+            android:exported="false" />
+        <activity
+            android:name=".Transaction1"
+            android:exported="false" />
+        <activity
+            android:name=".SendpackageReceipt"
+            android:exported="false" />
+        <activity
+            android:name=".Sendpackage"
+            android:exported="false" />
+        <activity
+            android:name=".Notification"
+            android:exported="false" />
+        <activity
+            android:name=".AddPayment"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
             android:name=".NewPassword"
             android:exported="false" />
         <activity
