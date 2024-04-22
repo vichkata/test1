@@ -48,7 +48,29 @@ public class Profile extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
+        ImageButton button3 = findViewById(R.id.imageButton3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile.this, TrackingPackage.class);
+                startActivity(intent);
+            }
+        });
+        ImageButton imbutton2 = findViewById(R.id.imageButton2);
+        imbutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile.this, Wallet.class);
+                startActivity(intent);
+            }
+        });
+        ImageButton imbutton = findViewById(R.id.imageButton);
+        imbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Profile.this, Home.class);
+                startActivity(intent);
+            }
+        });
     }
 }
