@@ -11,13 +11,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Home extends AppCompatActivity {
+public class Wallet extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_wallet);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -28,15 +28,15 @@ public class Home extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, Profile.class);
+                Intent intent = new Intent(Wallet.this, Profile.class);
                 startActivity(intent);
             }
         });
-        ImageButton button2 = findViewById(R.id.imageButton2);
+        ImageButton button2 = findViewById(R.id.imageButton);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, Wallet.class);
+                Intent intent = new Intent(Wallet.this, Home.class);
                 startActivity(intent);
             }
         });
@@ -44,7 +44,7 @@ public class Home extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, TrackingPackage.class);
+                Intent intent = new Intent(Wallet.this, TrackingPackage.class);
                 startActivity(intent);
             }
         });
