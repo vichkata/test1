@@ -7,72 +7,287 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="671dp"
-                android:orientation="vertical"></LinearLayout>
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:layout_width="match_parent"
-                android:layout_height="92dp">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:orientation="horizontal">
+                    android:layout_height="83dp"
+                    android:orientation="vertical">
 
-                    <ImageButton
-                        android:id="@+id/imageButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="20dp"
-                        android:background="@null"
-                        android:contentDescription="Home Button"
-                        app:srcCompat="@drawable/homeb" />
-
-                    <ImageButton
-                        android:id="@+id/imageButton2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="20dp"
-                        android:background="@null"
-                        android:contentDescription="wallet Button"
-                        app:srcCompat="@drawable/walletg" />
-
-                    <ImageButton
-                        android:id="@+id/imageButton3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="20dp"
-                        android:background="@null"
-                        android:contentDescription="track Button"
-                        app:srcCompat="@drawable/trackg" />
-
-                    <ImageButton
-                        android:id="@+id/imageButton4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="20dp"
-                        android:background="@null"
-                        android:contentDescription="profile Button"
-                        app:srcCompat="@drawable/profileg" />
+                    <EditText
+                        android:id="@+id/editTextText16"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#CFCFCF"
+                        android:ems="10"
+                        android:inputType="text"
+                        android:text="  Search services"
+                        android:textColor="#4C4C4C" />
                 </LinearLayout>
 
-            </com.google.android.material.bottomnavigation.BottomNavigationView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:background="@drawable/profilinfo">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView90"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Special for you"
+                        android:textColor="#EC8000"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/squareright" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="416dp"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="216dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/techmeetup" />
+
+                    <ImageView
+                        android:id="@+id/imageView16"
+                        android:layout_width="183dp"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/loverevolution" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView91"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What would you like to do"
+                        android:textColor="#0560FA"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="212dp"
+                        android:layout_height="118dp"
+                        android:layout_marginLeft="10dp">
+
+                        <View
+                            android:id="@+id/graySquare1"
+                            android:layout_width="180dp"
+                            android:layout_height="110dp"
+                            android:background="@android:drawable/btn_default" />
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/peoplecol" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="55dp"
+                            android:text="Customer Care"
+                            android:textColor="#0560FA" />
+
+                    </RelativeLayout>
+                    <!-- Второй серый прямоугольник -->
+                    <RelativeLayout
+                        android:layout_width="212dp"
+                        android:layout_height="118dp"
+                        android:layout_marginRight="10dp">
+
+                        <View
+                            android:id="@+id/graySquare2"
+                            android:layout_width="180dp"
+                            android:layout_height="110dp"
+                            android:background="@android:drawable/btn_default" />
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/codiconpackage" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="55dp"
+                            android:text="Send a package"
+                            android:textColor="#0560FA" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="134dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="212dp"
+                        android:layout_height="118dp"
+                        android:layout_marginLeft="10dp">
+
+                        <View
+                            android:id="@+id/graySquare3"
+                            android:layout_width="180dp"
+                            android:layout_height="110dp"
+                            android:background="@android:drawable/btn_default" />
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/cardhold" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="55dp"
+                            android:text="Fund your wallet"
+                            android:textColor="#0560FA" />
+
+                    </RelativeLayout>
+                    <!-- Второй серый прямоугольник -->
+                    <RelativeLayout
+                        android:id="@+id/graySquare4"
+                        android:layout_width="212dp"
+                        android:layout_height="118dp"
+                        android:layout_marginRight="10dp">
+
+                        <View
+                            android:layout_width="180dp"
+                            android:layout_height="110dp"
+                            android:background="#0560FA" />
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/ector" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="55dp"
+                            android:text="Chats"
+                            android:textColor="#FFFFFF" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="92dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:contentDescription="Home Button"
+                            app:srcCompat="@drawable/homeb" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:contentDescription="wallet Button"
+                            app:srcCompat="@drawable/walletg" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:contentDescription="track Button"
+                            app:srcCompat="@drawable/trackg" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:contentDescription="profile Button"
+                            app:srcCompat="@drawable/profileg" />
+                    </LinearLayout>
+
+                </com.google.android.material.bottomnavigation.BottomNavigationView>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
